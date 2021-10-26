@@ -16,6 +16,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InnoTech.LegosForLife.WebAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InnoTech.LegosForLife.Security", "InnoTech.LegosForLife.Security\InnoTech.LegosForLife.Security.csproj", "{C6A9E4D9-31F3-41A3-9A24-EF1291E77185}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Onion-Core-Test", "Onion-Core-Test", "{5FE8EB17-34A8-4844-9108-CAEE50539509}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InnoTech.LegosForLife.Core.Test", "InnoTech.LegosForLife.Core.Test\InnoTech.LegosForLife.Core.Test.csproj", "{8C3A6CCD-7985-4B5E-BC77-3CF55B250CE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InnoTech.LegosForLife.Domain.Test", "InnoTech.LegosForLife.Domain.Test\InnoTech.LegosForLife.Domain.Test.csproj", "{F8E68C40-EA51-4A4C-81CD-D6A11E92A525}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +33,8 @@ Global
 		{5C551F5D-96C4-4996-8601-04F231BF9F76} = {9A4D2006-6A28-4067-9316-996A5B55443A}
 		{899CB34F-2A56-47AF-80F9-EB83F3316BB9} = {546B2B82-265A-45EE-A740-60AD92A58A06}
 		{C6A9E4D9-31F3-41A3-9A24-EF1291E77185} = {9A4D2006-6A28-4067-9316-996A5B55443A}
+		{8C3A6CCD-7985-4B5E-BC77-3CF55B250CE1} = {5FE8EB17-34A8-4844-9108-CAEE50539509}
+		{F8E68C40-EA51-4A4C-81CD-D6A11E92A525} = {5FE8EB17-34A8-4844-9108-CAEE50539509}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{127E6DC7-2DFE-4ABC-BC19-B7A98F1BCEF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -49,5 +57,13 @@ Global
 		{C6A9E4D9-31F3-41A3-9A24-EF1291E77185}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6A9E4D9-31F3-41A3-9A24-EF1291E77185}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6A9E4D9-31F3-41A3-9A24-EF1291E77185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C3A6CCD-7985-4B5E-BC77-3CF55B250CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C3A6CCD-7985-4B5E-BC77-3CF55B250CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C3A6CCD-7985-4B5E-BC77-3CF55B250CE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C3A6CCD-7985-4B5E-BC77-3CF55B250CE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8E68C40-EA51-4A4C-81CD-D6A11E92A525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E68C40-EA51-4A4C-81CD-D6A11E92A525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E68C40-EA51-4A4C-81CD-D6A11E92A525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E68C40-EA51-4A4C-81CD-D6A11E92A525}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
