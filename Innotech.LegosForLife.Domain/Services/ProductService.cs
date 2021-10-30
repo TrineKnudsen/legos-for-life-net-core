@@ -12,16 +12,12 @@ namespace InnoTech.LegosForLife.Domain.Services
 
         public ProductService(IProductRepository productRepository)
         {
-            if (productRepository == null)
-            {
-                throw new InvalidDataException("Repository cannot be null");
-            }
-
-            _productRepository = productRepository;
+            _productRepository = productRepository ?? throw new InvalidDataException("ProductRepo cannot be null");
         }
         public List<Product> GetProducts()
         {
-            throw new System.NotImplementedException();
+            return _productRepository.FindAll();
+            
         }
     }
 }
