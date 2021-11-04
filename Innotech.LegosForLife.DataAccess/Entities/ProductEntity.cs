@@ -1,4 +1,4 @@
-﻿namespace Innotech.LegosForLife.DataAccess.Entities
+﻿namespace InnoTech.LegosForLife.DataAccess.Entities
 {
     public class ProductEntity
     {

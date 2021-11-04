@@ -1,14 +1,34 @@
 ﻿using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using InnoTech.LegosForLife.Core.Models;
 using InnoTech.LegosForLife.Domain.IRepositories;
 
-namespace Innotech.LegosForLife.DataAccess.Repositories
+namespace InnoTech.LegosForLife.DataAccess.Repositories
 {
     public class ProductRepository: IProductRepository
     {
+        private readonly MainDbContext _ctx;
+
+        public ProductRepository(MainDbContext ctx)
+        {
+            if (ctx == null)
+            {
+                throw new InvalidDataException("Product Repository must have a DB context");
+            }
+
+            _ctx = ctx;
+        }
+
         public List<Product> FindAll()
         {
-            throw new System.NotImplementedException();
+            return _ctx.Products
+                .Select(pe => new Product
+                {
+                    Id = pe.Id,
+                    Name = pe.Name
+                })
+                .ToList();
         }
     }
 }

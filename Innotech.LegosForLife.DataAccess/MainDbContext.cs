@@ -1,8 +1,8 @@
 ﻿using InnoTech.LegosForLife.Core.Models;
-using Innotech.LegosForLife.DataAccess.Entities;
+using InnoTech.LegosForLife.DataAccess.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Innotech.LegosForLife.DataAccess
+namespace InnoTech.LegosForLife.DataAccess
 {
     public class MainDbContext: DbContext
     {
